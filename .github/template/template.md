@@ -1,5 +1,7 @@
 ---
-name: Make this Issue work 
+title: Make this Issue work
+assignees: maclarel
+labels: bug, enhancement
 ---
 
 # Hello World
