@@ -1,6 +1,6 @@
 ---
 title: You made the Issue work
-assignees: 
+assignees: invalidusername
 labels: bug, enhancement
 ---
 
