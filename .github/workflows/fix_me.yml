@@ -7,7 +7,8 @@ jobs:
   create_issue:
     name: Creates an issue if you fix the workflow 
     timeout-minutes: 1
-    runs-on: INVALID_RUNNER_GROUP
+    #runs-on: INVALID_RUNNER_GROUP
+    runs-on: ubuntu-latest
     steps:
      - uses: actions/checkout@v2.1.0
      - uses: JasonEtco/create-an-issue@v2.5.0
