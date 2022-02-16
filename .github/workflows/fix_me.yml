@@ -1,19 +1,17 @@
 on:
   push:
-    branches:
+    brunches:
       - main 
 
 jobs:
   create_issue:
     name: Creates an issue if you fix the workflow 
     timeout-minutes: 1
-    #runs-on: INVALID_RUNNER_GROUP
-    runs-on: ubuntu-latest
+    runs-on: INVALID_RUNNER_GROUP
     steps:
      - uses: actions/checkout@v2.1.0
      - uses: JasonEtco/create-an-issue@v2.5.0
        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
        with:
-          #filename: .github/templates/template.md
           filename: .github/template/template.md
