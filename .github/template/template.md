@@ -1,6 +1,6 @@
 ---
 title: You made the Issue work
-assignees: fakeuser
+assignees: 
 labels: bug, enhancement
 ---
 
