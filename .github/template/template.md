@@ -1,6 +1,5 @@
 ---
 name: Make this Issue work 
-assignees: fakename
 ---
 
 # Hello World
