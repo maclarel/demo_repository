@@ -1,0 +1,17 @@
+on:
+  push:
+    branchs:
+      - main 
+
+jobs:
+  create_issue:
+    name: Creates an issue if you fix the workflow 
+    timeout-minutes: 5
+    runs-on: ubuntu-21.04
+    steps:
+     - uses: actions/checkout@v2.1.0
+     - uses: JasonEtco/create-an-issue@v2.5.0
+       env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+       with:
+          filename: .github/templates/template.md
